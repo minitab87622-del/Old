@@ -4,13 +4,13 @@ package.name = agecalculator
 package.domain = org.myapp
 source.dir = .
 
-# تمت إضافة ttf لضمان تضمين ملف الخط العربي
-source.include_exts = py,png,jpg,kv,atlas,ttf
+# تم الإبقاء على png و jpg لدعم صورة الخلفية والأيقونة، وتم حذف ttf
+source.include_exts = py,png,jpg,kv,atlas
 
 version = 1.0.0
 
-# تمت إضافة arabic_reshaper و python-bidi
-requirements = python3,kivy==2.2.1,pillow,datetime,arabic_reshaper,python-bidi
+# تم حذف مكتبات التعريب لأنك حذفت الخط لتجنب أي إغلاق مفاجئ
+requirements = python3,kivy==2.2.1,pillow,datetime
 
 presplash.filename = %(source.dir)s/icon.png
 icon.filename = %(source.dir)s/icon.png
