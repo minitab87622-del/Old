@@ -10,7 +10,8 @@ source.include_exts = py,png,jpg,kv,atlas
 version = 1.0.0
 
 # تم حذف مكتبات التعريب لأنك حذفت الخط لتجنب أي إغلاق مفاجئ
-requirements = python3,kivy==2.2.1,pillow,datetime
+requirements = python3,kivy,pillow
+
 
 presplash.filename = %(source.dir)s/icon.png
 icon.filename = %(source.dir)s/icon.png
